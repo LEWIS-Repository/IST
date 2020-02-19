@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umu-lu-SPn">
-                                <rect key="frame" x="164.5" y="44" width="85" height="41"/>
+                                <rect key="frame" x="165" y="44" width="85" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -43,9 +43,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X31-IW-UnB">
-                                <rect key="frame" x="184" y="460" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X31-IW-UnB">
+                                <rect key="frame" x="81" y="99" width="248" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="http://www.nemcc.edu/"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrV-ph-Hao">
                                 <rect key="frame" x="156" y="44" width="103" height="47"/>
@@ -56,11 +57,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="X31-IW-UnB" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="184" id="NAf-wx-f2u"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="X31-IW-UnB" secondAttribute="bottom" constant="323" id="RTd-Nd-sDx"/>
-                            <constraint firstItem="X31-IW-UnB" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="f7X-fp-dM5"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="tray" catalog="system" id="cPa-gy-q4n" userLabel="Home"/>
@@ -77,8 +73,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curriculum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5O-dC-Mbc">
-                                <rect key="frame" x="99" y="44" width="216" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Curriculum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5O-dC-Mbc">
+                                <rect key="frame" x="120" y="44" width="174" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -88,6 +84,7 @@
                         <constraints>
                             <constraint firstItem="d5O-dC-Mbc" firstAttribute="top" secondItem="EIb-Of-PTR" secondAttribute="top" id="JEF-nC-Efg"/>
                             <constraint firstItem="d5O-dC-Mbc" firstAttribute="centerX" secondItem="brv-xx-1AS" secondAttribute="centerX" id="SHn-a0-rvi"/>
+                            <constraint firstItem="EIb-Of-PTR" firstAttribute="trailing" secondItem="d5O-dC-Mbc" secondAttribute="trailing" constant="99" id="b8I-cD-MYI"/>
                             <constraint firstItem="d5O-dC-Mbc" firstAttribute="leading" secondItem="EIb-Of-PTR" secondAttribute="leading" constant="99" id="otf-yP-dXg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EIb-Of-PTR"/>
@@ -96,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOV-6b-k6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="73.313343328335833"/>
+            <point key="canvasLocation" x="1464" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
