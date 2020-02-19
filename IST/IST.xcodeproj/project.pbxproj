@@ -108,10 +108,10 @@
 				06AEC53823F456DB00A16E14 /* FirstViewController.swift */,
 				06AEC53A23F456DB00A16E14 /* SecondViewController.swift */,
 				06AEC53C23F456DB00A16E14 /* Main.storyboard */,
-				06AEC53F23F456DC00A16E14 /* Assets.xcassets */,
-				06AEC54123F456DC00A16E14 /* LaunchScreen.storyboard */,
-				06AEC54423F456DC00A16E14 /* Info.plist */,
 				06AEC56623F4599F00A16E14 /* Curriculum.swift */,
+				06AEC54123F456DC00A16E14 /* LaunchScreen.storyboard */,
+				06AEC53F23F456DC00A16E14 /* Assets.xcassets */,
+				06AEC54423F456DC00A16E14 /* Info.plist */,
 			);
 			path = IST;
 			sourceTree = "<group>";
