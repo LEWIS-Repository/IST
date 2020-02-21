@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class SecondViewController: UIViewController {
     
@@ -20,6 +21,18 @@ class SecondViewController: UIViewController {
             setBackground()
         }
 
+    
+    @IBAction func webSite(_ sender: UIButton) {
+        showSafariVC(for: "https://www.apple.com")
+    }
+    
+    func showSafariVC(for url: String) {
+        guard let url = URL(string: url) else {
+            return
+        }
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true)
+    }
         func setBackground() {
             view.addSubview(backgroundImageView)
             backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
