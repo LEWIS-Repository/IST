@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class FirstViewController: UIViewController {
     
@@ -16,9 +17,34 @@ class FirstViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
+        
             setBackground()
         }
-
+    
+    
+    @IBAction func youTube(_ sender: UIButton) {
+        showSafariVC(for: "https://www.youtube.com/watch?v=7Z5q3Ryyj6g")
+    }
+    
+    @IBAction func youTube2(_ sender: UIButton) {
+        showSafariVC(for: "https://www.youtube.com/watch?v=7Z5q3Ryyj6g")
+    }
+    
+    
+    @IBAction func youTube3(_ sender: UIButton) {
+        showSafariVC(for: "https://www.youtube.com/watch?v=7Z5q3Ryyj6g")
+        
+    }
+    
+    
+     func showSafariVC(for url: String) {
+           guard let url = URL(string: url) else {
+               return
+           }
+           let safariVC = SFSafariViewController(url: url)
+           present(safariVC, animated: true)
+       }
+    
         func setBackground() {
             view.addSubview(backgroundImageView)
             backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
