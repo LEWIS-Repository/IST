@@ -7,81 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Video-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <viewController id="9pv-A4-QxB" userLabel="Video" customClass="FirstViewController" customModule="IST" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" customClass="Video">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umu-lu-SPn">
-                                <rect key="frame" x="164.5" y="44" width="85" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GGy-DP-feH">
-                                <rect key="frame" x="20" y="93" width="374" height="720"/>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colored" translatesAutoresizingMaskIntoConstraints="NO" id="u8h-En-lY0">
-                                <rect key="frame" x="87" y="222" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colored" translatesAutoresizingMaskIntoConstraints="NO" id="O6J-sX-ZOL">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEW-7F-dNY">
-                                <rect key="frame" x="178" y="481" width="58" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play" image="play.rectangle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="youTube2:" destination="9pv-A4-QxB" eventType="touchUpInside" id="yhE-q6-W4T"/>
-                                    <action selector="youTube:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xmR-s9-RzL"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colored" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-sw-9B6">
-                                <rect key="frame" x="87" y="578" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnV-hk-gZp">
-                                <rect key="frame" x="178" y="668" width="58" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play" image="play.rectangle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="youTube2:" destination="9pv-A4-QxB" eventType="touchUpInside" id="HXg-KE-85k"/>
-                                    <action selector="youTube3:" destination="9pv-A4-QxB" eventType="touchUpInside" id="qwM-uk-LSA"/>
-                                    <action selector="youTube:" destination="9pv-A4-QxB" eventType="touchUpInside" id="FJm-yx-abA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiC-Qv-SPD">
-                                <rect key="frame" x="178" y="311" width="58" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play" image="play.rectangle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="youTube:" destination="9pv-A4-QxB" eventType="touchUpInside" id="IpA-Qv-s0a"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Umu-lu-SPn" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="K3U-wt-ZHP"/>
-                            <constraint firstItem="GGy-DP-feH" firstAttribute="top" secondItem="Umu-lu-SPn" secondAttribute="bottom" constant="8" id="TRj-rr-oux"/>
-                            <constraint firstItem="GGy-DP-feH" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="eAX-Wa-t93"/>
-                            <constraint firstItem="GGy-DP-feH" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="haV-2e-p89"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="GGy-DP-feH" secondAttribute="trailing" constant="20" id="pYA-hu-T1j"/>
-                            <constraint firstItem="Umu-lu-SPn" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="raQ-B9-8XO"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Video" image="video.circle" catalog="system" id="fjT-Jr-H13"/>
-                    <navigationItem key="navigationItem" id="TlX-y2-RPb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1657.9710144927537" y="-905.35714285714278"/>
-        </scene>
         <!--Home-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -322,12 +247,58 @@
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="SVQ-zQ-CWQ"/>
                         <segue destination="1HU-Vm-IAl" kind="relationship" relationship="viewControllers" id="8Nv-nL-lyk"/>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="eNr-pL-9QC"/>
+                        <segue destination="A6q-1f-bGF" kind="relationship" relationship="viewControllers" id="nbo-3M-PKN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="me3-iZ-1wo">
+            <objects>
+                <tableViewController id="d4H-Z9-aeZ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="One-II-VrC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="250" id="f92-WH-weK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="250"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f92-WH-weK" id="cYT-jX-bRb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d4H-Z9-aeZ" id="Noa-Uk-4Li"/>
+                            <outlet property="delegate" destination="d4H-Z9-aeZ" id="gWk-s6-D32"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="2OB-zn-sUe"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sK-IB-Vi2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131.8840579710145" y="-890.625"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="Z3M-ac-Lqc">
+            <objects>
+                <navigationController id="A6q-1f-bGF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video" image="video.circle.fill" catalog="system" id="SiS-Dr-5Ta"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YZb-yK-bV8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d4H-Z9-aeZ" kind="relationship" relationship="rootViewController" id="5K0-Wp-3rd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trh-20-8xD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-890"/>
         </scene>
         <!--Curriculum-->
         <scene sceneID="Qy4-b7-dfl">
@@ -352,11 +323,9 @@
     <resources>
         <image name="Cyber Defense" width="1382" height="1778"/>
         <image name="book.circle" catalog="system" width="64" height="60"/>
-        <image name="colored" width="562.5" height="1218"/>
         <image name="njackson" width="320" height="475"/>
         <image name="nlewis" width="320" height="320"/>
-        <image name="play.rectangle.fill" catalog="system" width="64" height="46"/>
         <image name="star.circle" catalog="system" width="64" height="60"/>
-        <image name="video.circle" catalog="system" width="64" height="60"/>
+        <image name="video.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
