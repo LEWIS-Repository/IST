@@ -17,6 +17,8 @@
 		06AEC54E23F456DC00A16E14 /* ISTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEC54D23F456DC00A16E14 /* ISTTests.swift */; };
 		06AEC55923F456DC00A16E14 /* ISTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEC55823F456DC00A16E14 /* ISTUITests.swift */; };
 		06AEC56723F4599F00A16E14 /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEC56623F4599F00A16E14 /* Curriculum.swift */; };
+		B43D2719242DDD5F00CF73CD /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43D2718242DDD5F00CF73CD /* ViewControllers.swift */; };
+		B43D271B242DDE1500CF73CD /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43D271A242DDE1500CF73CD /* NewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		06AEC55823F456DC00A16E14 /* ISTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISTUITests.swift; sourceTree = "<group>"; };
 		06AEC55A23F456DC00A16E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06AEC56623F4599F00A16E14 /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
+		B43D2718242DDD5F00CF73CD /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		B43D271A242DDE1500CF73CD /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				06AEC53823F456DB00A16E14 /* FirstViewController.swift */,
 				06AEC53A23F456DB00A16E14 /* SecondViewController.swift */,
 				06AEC53C23F456DB00A16E14 /* Main.storyboard */,
+				B43D271A242DDE1500CF73CD /* NewTableViewCell.swift */,
+				B43D2718242DDD5F00CF73CD /* ViewControllers.swift */,
 				06AEC56623F4599F00A16E14 /* Curriculum.swift */,
 				06AEC54123F456DC00A16E14 /* LaunchScreen.storyboard */,
 				06AEC53F23F456DC00A16E14 /* Assets.xcassets */,
@@ -267,7 +273,9 @@
 			files = (
 				06AEC53B23F456DB00A16E14 /* SecondViewController.swift in Sources */,
 				06AEC53923F456DB00A16E14 /* FirstViewController.swift in Sources */,
+				B43D2719242DDD5F00CF73CD /* ViewControllers.swift in Sources */,
 				06AEC53523F456DB00A16E14 /* AppDelegate.swift in Sources */,
+				B43D271B242DDE1500CF73CD /* NewTableViewCell.swift in Sources */,
 				06AEC53723F456DB00A16E14 /* SceneDelegate.swift in Sources */,
 				06AEC56723F4599F00A16E14 /* Curriculum.swift in Sources */,
 			);
