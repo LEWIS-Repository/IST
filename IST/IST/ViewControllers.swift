@@ -31,11 +31,12 @@ class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSour
         return 2
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 350
+        return 320
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewTableViewCell
+        
         
         cell.videoImage.image = picTures[indexPath.row]
         

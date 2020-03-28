@@ -254,7 +254,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--View Controllers-->
+        <!--Videos for IST-->
         <scene sceneID="DZL-O0-alb">
             <objects>
                 <viewController id="389-SZ-2EL" customClass="ViewControllers" customModule="IST" customModuleProvider="target" sceneMemberID="viewController">
@@ -266,31 +266,31 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="250" id="RCA-LD-J0d" customClass="NewTableViewCell" customModule="IST" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="250"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="332" id="RCA-LD-J0d" customClass="NewTableViewCell" customModule="IST" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="332"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RCA-LD-J0d" id="BkE-rT-8ed">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KCQ-f8-VmI">
-                                                    <rect key="frame" x="20" y="20" width="374" height="230"/>
+                                                    <rect key="frame" x="0.0" y="52" width="414" height="294"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VA-oY-0Ht">
-                                                    <rect key="frame" x="33" y="179" width="42" height="21"/>
+                                                    <rect key="frame" x="37" y="23" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="KCQ-f8-VmI" firstAttribute="leading" secondItem="BkE-rT-8ed" secondAttribute="leading" constant="20" symbolic="YES" id="2P5-rm-6k9"/>
-                                                <constraint firstAttribute="bottom" secondItem="5VA-oY-0Ht" secondAttribute="bottom" constant="50" id="K0t-S0-pCw"/>
-                                                <constraint firstItem="KCQ-f8-VmI" firstAttribute="top" secondItem="BkE-rT-8ed" secondAttribute="top" constant="20" symbolic="YES" id="L7l-xh-s1B"/>
-                                                <constraint firstAttribute="trailing" secondItem="5VA-oY-0Ht" secondAttribute="trailing" constant="339" id="NzA-Ou-JPg"/>
+                                                <constraint firstItem="KCQ-f8-VmI" firstAttribute="leading" secondItem="BkE-rT-8ed" secondAttribute="leading" id="2P5-rm-6k9"/>
+                                                <constraint firstAttribute="bottom" secondItem="5VA-oY-0Ht" secondAttribute="bottom" constant="288" id="K0t-S0-pCw"/>
+                                                <constraint firstItem="KCQ-f8-VmI" firstAttribute="top" secondItem="BkE-rT-8ed" secondAttribute="top" constant="52" id="L7l-xh-s1B"/>
+                                                <constraint firstAttribute="trailing" secondItem="5VA-oY-0Ht" secondAttribute="trailing" constant="335" id="NzA-Ou-JPg"/>
                                                 <constraint firstItem="5VA-oY-0Ht" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BkE-rT-8ed" secondAttribute="leading" constant="20" symbolic="YES" id="UzS-oy-Cd1"/>
-                                                <constraint firstAttribute="trailing" secondItem="KCQ-f8-VmI" secondAttribute="trailing" constant="20" symbolic="YES" id="ddf-UM-ykr"/>
-                                                <constraint firstAttribute="bottom" secondItem="KCQ-f8-VmI" secondAttribute="bottom" id="yGy-aK-V6u"/>
+                                                <constraint firstAttribute="trailing" secondItem="KCQ-f8-VmI" secondAttribute="trailing" id="ddf-UM-ykr"/>
+                                                <constraint firstAttribute="bottom" secondItem="KCQ-f8-VmI" secondAttribute="bottom" constant="-14" id="yGy-aK-V6u"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -314,7 +314,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Psu-kX-ome"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1uG-ep-41U"/>
+                    <navigationItem key="navigationItem" title="Videos for IST" id="1uG-ep-41U"/>
                     <connections>
                         <segue destination="xk6-JS-8Hm" kind="show" identifier="toVideo" id="ZxU-Lv-KLA"/>
                     </connections>
@@ -332,18 +332,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cN6-YY-PjP">
-                                <rect key="frame" x="20" y="88" width="374" height="234"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="234"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="234" id="7fW-YV-OEP"/>
                                 </constraints>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cN6-YY-PjP" firstAttribute="leading" secondItem="sRS-i1-pAl" secondAttribute="leadingMargin" id="tTe-T3-TxW"/>
+                            <constraint firstItem="cN6-YY-PjP" firstAttribute="leading" secondItem="sRS-i1-pAl" secondAttribute="leadingMargin" constant="-20" id="tTe-T3-TxW"/>
                             <constraint firstItem="cN6-YY-PjP" firstAttribute="top" secondItem="3tD-sV-okl" secondAttribute="top" id="uRH-gg-b3i"/>
-                            <constraint firstItem="cN6-YY-PjP" firstAttribute="trailing" secondItem="sRS-i1-pAl" secondAttribute="trailingMargin" id="vwa-4w-djK"/>
+                            <constraint firstItem="cN6-YY-PjP" firstAttribute="trailing" secondItem="sRS-i1-pAl" secondAttribute="trailingMargin" constant="20" id="vwa-4w-djK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3tD-sV-okl"/>
                     </view>
@@ -375,11 +375,11 @@
             </objects>
             <point key="canvasLocation" x="1198.5507246376812" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Video-->
         <scene sceneID="ksS-uj-tY2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dyg-hx-p8G" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="FaG-qN-bYX"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="play.circle.fill" catalog="system" id="FaG-qN-bYX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YvT-lU-K1u">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -400,6 +400,7 @@
         <image name="book.circle" catalog="system" width="64" height="60"/>
         <image name="njackson" width="320" height="475"/>
         <image name="nlewis" width="320" height="320"/>
+        <image name="play.circle.fill" catalog="system" width="64" height="60"/>
         <image name="star.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>
