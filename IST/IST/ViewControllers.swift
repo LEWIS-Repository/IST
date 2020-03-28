@@ -21,14 +21,19 @@ class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSour
     
     
     let video = Video()
-    video.Key = "FpeiRBTX7mk"
-    video.Title = "video"
+    video.Key = "BLnHKgRjDj0"
+    video.Title = "First Video"
     videos.append(video)
+        
+        let video2 = Video()
+        video2.Key = "LnHb1VdktH4"
+        video2.Title = "Second Video"
+        videos.append(video2)
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return videos.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 320
@@ -37,7 +42,7 @@ class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewTableViewCell
         
-        
+        cell.videoLabel.text = videos[indexPath.row].Title
         cell.videoImage.image = picTures[indexPath.row]
         
                return cell
