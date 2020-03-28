@@ -10,8 +10,10 @@ import UIKit
 
 class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
-    var picTures = [#imageLiteral(resourceName: "colored"), #imageLiteral(resourceName: "colored")]
+    var picTures = [#imageLiteral(resourceName: "video1"), #imageLiteral(resourceName: "video2")]
     var videos:[Video] = []
+    
+    var video:Video = Video()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,10 @@ class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return videos.count
+        return 2
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 350
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,14 +42,28 @@ class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSour
                return cell
     }
     
-    
-    class Video{
-        var Key:String = ""
-        var Title:String = ""
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vi = videos[indexPath.row]
+        self.video = vi
+        
+        performSegue(withIdentifier: "toVideo", sender: nil)
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toVideo" {
+            let vc = segue.destination as! VideoViewController
+            vc.video = self.video
+    }
+    }
 }
 
+
+  class Video{
+      var Key:String = ""
+      var Title:String = ""
+  }
 /*extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         contentMode = mode
