@@ -21,8 +21,10 @@ class InterestCollectionViewCell: UICollectionViewCell {
             featuredImageView.image = interest.featuredImage
             
         }else{
-            featuredImageView.image = nil
+            featuredImageView.image = interest.featuredImage
         }
+        featuredImageView.layer.cornerRadius = 10.0
+        featuredImageView.layer.masksToBounds = true
     }
     
 }

@@ -20,8 +20,8 @@ class Interest
     static func fetchInterests() -> [Interest]
     {
         return [
-            Interest(featuredImage: #imageLiteral(resourceName: "video2")),
-            Interest(featuredImage: #imageLiteral(resourceName: "video1"))
+            Interest(featuredImage: #imageLiteral(resourceName: "colored")),
+            Interest(featuredImage: #imageLiteral(resourceName: "colored"))
         ]
     }
 }
