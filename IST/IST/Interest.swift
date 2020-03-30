@@ -10,18 +10,5 @@ import UIKit
 
 class Interest
 {
-    var featuredImage: UIImage
-    
-    init(featuredImage: UIImage)
-    {
-        self.featuredImage = featuredImage
-    }
-    
-    static func fetchInterests() -> [Interest]
-    {
-        return [
-            Interest(featuredImage: #imageLiteral(resourceName: "colored")),
-            Interest(featuredImage: #imageLiteral(resourceName: "colored"))
-        ]
-    }
+ 
 }
