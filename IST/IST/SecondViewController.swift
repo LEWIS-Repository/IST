@@ -21,25 +21,37 @@ class SecondViewController: UIViewController {
                  CustomData(image: #imageLiteral(resourceName: "video1"))
     ]
     
-    let backgroundImageView = UIImageView()
+    @IBOutlet weak var pageView: UIPageControl!
+    
         
     fileprivate let CollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+       
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
+        cv.isPagingEnabled = true
+        cv.showsHorizontalScrollIndicator = false
         cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
         return cv
     }()
+    var timer = Timer()
+    var counter = 0
     
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            //setBackground()
+            pageView.numberOfPages = data.count
+            pageView.currentPage = 0
+            DispatchQueue.main.async {
+                self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+            }
+            
+            
           
             view.addSubview(CollectionView)
             CollectionView.backgroundColor = .white
-            CollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 250).isActive = true
+            CollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 280).isActive = true
             CollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
             CollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
             CollectionView.heightAnchor.constraint(equalTo: CollectionView.widthAnchor, multiplier: 1.0).isActive = true
@@ -49,6 +61,21 @@ class SecondViewController: UIViewController {
             CollectionView.dataSource = self
             
         }
+    
+    @objc func changeImage() {
+        if counter < data.count {
+            let index = IndexPath.init(item: counter, section: 0)
+            self.CollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            pageView.currentPage = counter
+            counter += 1
+        }else {
+            counter = 0
+            let index = IndexPath.init(item: counter, section: 0)
+            self.CollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
+            pageView.currentPage = counter
+        }
+        
+    }
 
     @IBAction func shareButton(_ sender: Any) {
         let activityVC = UIActivityViewController(activityItems: ["www.google.com"], applicationActivities: nil)
@@ -70,16 +97,8 @@ class SecondViewController: UIViewController {
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true)
     }
-        func setBackground() {
-            view.addSubview(backgroundImageView)
-            backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
-            backgroundImageView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
-            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-            backgroundImageView.image = UIImage(named: "colored")
-            view.sendSubviewToBack(backgroundImageView)
-        }
+    
+
     }
 
 extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
