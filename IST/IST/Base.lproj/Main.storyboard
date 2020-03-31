@@ -87,8 +87,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41N-VL-9uh">
                                                 <rect key="frame" x="0.0" y="0.0" width="185" height="184.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nlewis" translatesAutoresizingMaskIntoConstraints="NO" id="VdE-et-9pL">
-                                                        <rect key="frame" x="8" y="8" width="169" height="168.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nlewis" translatesAutoresizingMaskIntoConstraints="NO" id="VdE-et-9pL">
+                                                        <rect key="frame" x="27" y="8" width="130" height="169"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -101,8 +101,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-eK-U9K">
                                                 <rect key="frame" x="190" y="0.0" width="185" height="184.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="njackson" translatesAutoresizingMaskIntoConstraints="NO" id="PH9-28-6nd">
-                                                        <rect key="frame" x="8" y="8" width="169" height="168.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="njackson" translatesAutoresizingMaskIntoConstraints="NO" id="PH9-28-6nd">
+                                                        <rect key="frame" x="27" y="8" width="130" height="169"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -120,14 +120,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SJ-xV-IQM">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natasha Lewis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-hl-wO8">
-                                                        <rect key="frame" x="8" y="8" width="177.5" height="75"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Natasha Lewis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-hl-wO8">
+                                                        <rect key="frame" x="32" y="8" width="177.5" height="75"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nick Jackson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPt-WE-cYc">
-                                                        <rect key="frame" x="189.5" y="8" width="177.5" height="75"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nick Jackson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPt-WE-cYc">
+                                                        <rect key="frame" x="225" y="8" width="177.5" height="75"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -157,7 +157,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JU-ly-Dp4">
                                                         <rect key="frame" x="8" y="0.0" width="359" height="30.5"/>
-                                                        <state key="normal" title="Cyber Defense"/>
+                                                        <state key="normal" title="Cyber Defense">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <segue destination="e40-wP-mJm" kind="show" id="5MN-rH-HJW"/>
                                                         </connections>
@@ -175,7 +178,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eaw-p5-skV">
                                                         <rect key="frame" x="8" y="0.0" width="359" height="30.5"/>
-                                                        <state key="normal" title="Extended Reality"/>
+                                                        <state key="normal" title="Extended Reality">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <segue destination="Khb-BH-i3O" kind="show" id="vR2-5n-fMg"/>
                                                         </connections>
@@ -193,7 +199,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyw-BI-huW">
                                                         <rect key="frame" x="8" y="0.0" width="359" height="30.5"/>
-                                                        <state key="normal" title="System Administration"/>
+                                                        <state key="normal" title="System Administration">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <segue destination="3o3-dW-XmE" kind="show" id="vLQ-wR-2Lu"/>
                                                         </connections>
@@ -211,7 +220,10 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-Bz-fcj">
                                                         <rect key="frame" x="8" y="0.0" width="359" height="30.5"/>
-                                                        <state key="normal" title="IOS App &amp; Software Development"/>
+                                                        <state key="normal" title="IOS App &amp; Software Development">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <segue destination="CdC-hI-1cY" kind="show" id="ID0-l4-HOd"/>
                                                         </connections>
@@ -245,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOV-6b-k6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="21"/>
+            <point key="canvasLocation" x="2101.5999999999999" y="20.239880059970016"/>
         </scene>
         <!--App Development-->
         <scene sceneID="GRI-n9-aEg">
@@ -255,13 +267,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App development" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNq-la-Ktf">
-                                <rect key="frame" x="112" y="88" width="191" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mobile App" translatesAutoresizingMaskIntoConstraints="NO" id="j71-0g-m57">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Smv-mV-yqh"/>
@@ -270,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRh-cK-RE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="0.0"/>
+            <point key="canvasLocation" x="4269.6000000000004" y="-0.44977511244377816"/>
         </scene>
         <!--System Administration-->
         <scene sceneID="mfb-Jl-LKj">
@@ -280,13 +289,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="System Administration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohq-3A-2bn">
-                                <rect key="frame" x="86" y="88" width="243" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SYstem Admin" translatesAutoresizingMaskIntoConstraints="NO" id="Wvc-mA-vFp">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Div-sk-Y4X"/>
@@ -295,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yqp-1H-nyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="749"/>
+            <point key="canvasLocation" x="4269.6000000000004" y="748.87556221889065"/>
         </scene>
         <!--Cyber Defense-->
         <scene sceneID="jQX-Y4-asz">
@@ -305,8 +311,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cyber Defense" translatesAutoresizingMaskIntoConstraints="NO" id="x1A-vj-6xG">
-                                <rect key="frame" x="10" y="52" width="355.00000000000023" height="566"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Cyber Defense" translatesAutoresizingMaskIntoConstraints="NO" id="x1A-vj-6xG">
+                                <rect key="frame" x="10" y="44" width="355" height="623"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -322,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdF-lC-z8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4271" y="-680"/>
+            <point key="canvasLocation" x="4269.6000000000004" y="-680.5097451274363"/>
         </scene>
         <!--Extended Reality-->
         <scene sceneID="vjj-bC-JUE">
@@ -332,13 +338,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extended Reality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDE-Mo-NLP">
-                                <rect key="frame" x="117" y="88" width="181" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Xr" translatesAutoresizingMaskIntoConstraints="NO" id="t4p-6r-cf0">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="x0t-vc-jB1"/>
@@ -347,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kr-kS-F2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4270" y="1440"/>
+            <point key="canvasLocation" x="4269.6000000000004" y="1439.7301349325339"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -535,6 +538,9 @@
     </scenes>
     <resources>
         <image name="Cyber Defense" width="1382" height="1778"/>
+        <image name="Mobile App" width="624" height="776"/>
+        <image name="SYstem Admin" width="624" height="777"/>
+        <image name="Xr" width="621" height="747"/>
         <image name="book.circle" catalog="system" width="64" height="60"/>
         <image name="njackson" width="320" height="475"/>
         <image name="nlewis" width="320" height="320"/>
