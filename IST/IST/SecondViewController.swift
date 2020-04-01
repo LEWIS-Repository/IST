@@ -43,28 +43,30 @@ class SecondViewController: UIViewController {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
             
-            let redView = UIView()
-            redView.backgroundColor = .red
-            view.addSubview(redView)
+           /*let redView = UIView()
+           redView.backgroundColor = .red
+           view.addSubview(redView)
             
-            redView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 16, bottom: 500, right: 16))
-            
-            
+            redView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 100, left: 16, bottom: 300, right: 16))*/
             
             
             
-            pageView.numberOfPages = data.count
-            pageView.currentPage = 0
+            
+            
+//            pageView.numberOfPages = data.count
+           // pageView.currentPage = 0
             DispatchQueue.main.async {
                 self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
             }
             
             view.addSubview(CollectionView)
             CollectionView.backgroundColor = .white
-            CollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 280).isActive = true
+            
+            CollectionView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 5, bottom: 0, right: 5))
+            /*CollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 280).isActive = true
             CollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
             CollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
-            CollectionView.heightAnchor.constraint(equalTo: CollectionView.widthAnchor, multiplier: 1.0).isActive = true
+            CollectionView.heightAnchor.constraint(equalTo: CollectionView.widthAnchor, multiplier: 1.0).isActive = true*/
             CollectionView.delegate = self
             CollectionView.dataSource = self
             
@@ -74,24 +76,24 @@ class SecondViewController: UIViewController {
         if counter < data.count {
             let index = IndexPath.init(item: counter, section: 0)
             self.CollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
-            pageView.currentPage = counter
+            //pageView.currentPage = counter
             counter += 1
         }else {
             counter = 0
             let index = IndexPath.init(item: counter, section: 0)
             self.CollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
-            pageView.currentPage = counter}
+           // pageView.currentPage = counter}
         
     }
 
-    @IBAction func shareButton(_ sender: Any) {
-        let activityVC = UIActivityViewController(activityItems: ["www.google.com"], applicationActivities: nil)
+    //@IBAction func shareButton(_ sender: Any) {
+       /* let activityVC = UIActivityViewController(activityItems: ["www.google.com"], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
-        self.present(activityVC, animated: true, completion: nil)
+        self.present(activityVC, animated: true, completion: nil)*/
         
     }
     
-    @IBAction func webSite(_ sender: UIButton) {
+   /* @IBAction func webSite(_ sender: UIButton) {
         showSafariVC(for: "https://www.apple.com")}
     func showSafariVC(for url: String) {
         guard let url = URL(string: url) else {
@@ -100,8 +102,8 @@ class SecondViewController: UIViewController {
         }
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true)
-        
-    }
+        */
+    //}
 
 }
 
@@ -126,7 +128,7 @@ extension UIView {
 extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/1.0, height: collectionView.frame.width/1)
+        return CGSize(width: collectionView.frame.width/2.0, height: collectionView.frame.width/1.0)
     }
     
    
