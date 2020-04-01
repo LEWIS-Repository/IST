@@ -35,28 +35,36 @@ class SecondViewController: UIViewController {
         cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
         return cv
     }()
+    
     var timer = Timer()
     var counter = 0
     
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
+            
+            let redView = UIView()
+            redView.backgroundColor = .red
+            view.addSubview(redView)
+            
+            redView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 16, bottom: 500, right: 16))
+            
+            
+            
+            
+            
             pageView.numberOfPages = data.count
             pageView.currentPage = 0
             DispatchQueue.main.async {
                 self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
             }
             
-            
-          
             view.addSubview(CollectionView)
             CollectionView.backgroundColor = .white
             CollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 280).isActive = true
             CollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
             CollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
             CollectionView.heightAnchor.constraint(equalTo: CollectionView.widthAnchor, multiplier: 1.0).isActive = true
-            
-            
             CollectionView.delegate = self
             CollectionView.dataSource = self
             
@@ -72,34 +80,48 @@ class SecondViewController: UIViewController {
             counter = 0
             let index = IndexPath.init(item: counter, section: 0)
             self.CollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
-            pageView.currentPage = counter
-        }
+            pageView.currentPage = counter}
         
     }
 
     @IBAction func shareButton(_ sender: Any) {
         let activityVC = UIActivityViewController(activityItems: ["www.google.com"], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
-        
         self.present(activityVC, animated: true, completion: nil)
-        
         
     }
     
     @IBAction func webSite(_ sender: UIButton) {
-        showSafariVC(for: "https://www.apple.com")
-    }
-    
+        showSafariVC(for: "https://www.apple.com")}
     func showSafariVC(for url: String) {
         guard let url = URL(string: url) else {
             return
+            
         }
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true)
+        
     }
-    
 
+}
+
+
+extension UIView {
+    func anchor(top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor, trailing: NSLayoutXAxisAnchor, padding: UIEdgeInsets = .zero)
+    {
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        topAnchor.constraint(equalTo: top, constant: padding.top).isActive = true
+        leadingAnchor.constraint(equalTo: leading, constant: padding.left).isActive = true
+        bottomAnchor.constraint(equalTo: bottom, constant: -padding.bottom).isActive = true
+        trailingAnchor.constraint(equalTo: trailing,constant: -padding.right).isActive = true
     }
+}
+
+
+
+
+
 
 extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     

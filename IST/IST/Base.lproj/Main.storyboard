@@ -15,12 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video1" translatesAutoresizingMaskIntoConstraints="NO" id="vUQ-VC-ZYT">
-                                <rect key="frame" x="87" y="0.0" width="201" height="205.00000000000011"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="205" id="ouZ-aO-dX6"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu2-hg-x38">
                                 <rect key="frame" x="20" y="533" width="335" height="37"/>
                                 <state key="normal" title="Share Link"/>
@@ -46,16 +40,13 @@
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="ajy-G6-dzg" secondAttribute="trailing" constant="20" id="3v8-PF-Dvw"/>
                             <constraint firstItem="gu2-hg-x38" firstAttribute="height" secondItem="a69-eI-Nia" secondAttribute="height" id="4p5-dg-5Ay"/>
                             <constraint firstItem="a69-eI-Nia" firstAttribute="height" secondItem="ajy-G6-dzg" secondAttribute="height" id="6UM-xm-KMp"/>
-                            <constraint firstItem="vUQ-VC-ZYT" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="87" id="8Do-er-0bO"/>
                             <constraint firstItem="a69-eI-Nia" firstAttribute="top" secondItem="ajy-G6-dzg" secondAttribute="bottom" constant="22" id="Gs0-OU-n8j"/>
                             <constraint firstItem="ajy-G6-dzg" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="XaF-jB-Y80"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="gu2-hg-x38" secondAttribute="bottom" constant="48" id="Y8V-dV-OFU"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="vUQ-VC-ZYT" secondAttribute="trailing" constant="87" id="Yo4-VW-4um"/>
                             <constraint firstItem="gu2-hg-x38" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="ZLV-Ls-rmQ"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="gu2-hg-x38" secondAttribute="trailing" constant="20" id="a80-HD-gSp"/>
                             <constraint firstItem="gu2-hg-x38" firstAttribute="top" secondItem="a69-eI-Nia" secondAttribute="bottom" constant="8" id="dOV-HF-reK"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="a69-eI-Nia" secondAttribute="trailing" constant="20" id="inN-C0-J3U"/>
-                            <constraint firstItem="vUQ-VC-ZYT" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="u0A-O5-MR9"/>
                             <constraint firstItem="gu2-hg-x38" firstAttribute="height" secondItem="ajy-G6-dzg" secondAttribute="height" id="vMw-G5-5l8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
@@ -546,6 +537,5 @@
         <image name="nlewis" width="320" height="320"/>
         <image name="play.circle.fill" catalog="system" width="64" height="60"/>
         <image name="star.circle" catalog="system" width="64" height="60"/>
-        <image name="video1" width="1440" height="748"/>
     </resources>
 </document>
