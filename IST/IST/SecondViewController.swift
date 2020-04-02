@@ -25,7 +25,10 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var pageView: UIPageControl!
     
-        
+    @IBOutlet weak var gifImage: UIImageView!
+    
+    
+    
     fileprivate let CollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -44,8 +47,6 @@ class SecondViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            
-            
             
             
             
