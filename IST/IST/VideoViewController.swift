@@ -14,9 +14,13 @@ class VideoViewController: UIViewController {
     
     @IBOutlet weak var videoWebView: UIWebView!
     
+    @IBOutlet weak var gifImage: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        gifImage.loadGif(name: "giphy")
         getVideo(videokey: video.Key)
         
         // Do any additional setup after loading the view.

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
-    var picTures = [#imageLiteral(resourceName: "video1"), #imageLiteral(resourceName: "video2"), #imageLiteral(resourceName: "video1")]
+    var picTures = [#imageLiteral(resourceName: "video1"), #imageLiteral(resourceName: "video2"), #imageLiteral(resourceName: "nemcc")]
     var videos:[Video] = []
     
     var video:Video = Video()
@@ -22,17 +22,17 @@ class ViewControllers: UIViewController,UITableViewDelegate, UITableViewDataSour
     
     let video = Video()
     video.Key = "4EisdIeXalo"
-    video.Title = "First Video"
+    video.Title = "Gordon Hall"
     videos.append(video)
         
         let video2 = Video()
         video2.Key = "CPimeZXvrxk"
-        video2.Title = "Second Video"
+        video2.Title = "IST Majors"
         videos.append(video2)
         
         let video3 = Video()
         video3.Key = "BLnHKgRjDj0"
-        video3.Title = "three Video"
+        video3.Title = "NEMCC Commercial"
         videos.append(video3)
         
     }

@@ -18,9 +18,16 @@ class SecondViewController: UIViewController {
     
     
     
-    let data = [ CustomData(image: #imageLiteral(resourceName: "video2")),
-                 CustomData(image: #imageLiteral(resourceName: "colored")),
-                 CustomData(image: #imageLiteral(resourceName: "video1"))
+    let data = [ CustomData(image: #imageLiteral(resourceName: "FR-Morvan-Extended-Virtual-Augmented-Reality-2400")),
+                 CustomData(image: #imageLiteral(resourceName: "1*o85c5I6T07x3ZZCAWPgDfg")),
+                 CustomData(image: #imageLiteral(resourceName: "cybersecurity-ts-100621287-large")),
+                 CustomData(image: #imageLiteral(resourceName: "500_F_143433252_3F4OZ5qpnbnUrE9qKC8SoW3wz97eiZIb")),
+                 CustomData(image: #imageLiteral(resourceName: "12")),
+                 CustomData(image: #imageLiteral(resourceName: "Becoming-A-Better-Software-Developer-Square")),
+                 CustomData(image: #imageLiteral(resourceName: "mobile-app-banner")),
+                 CustomData(image: #imageLiteral(resourceName: "proactive-defense"))
+                 
+        
     ]
     
     @IBOutlet weak var pageView: UIPageControl!
@@ -149,7 +156,7 @@ extension UIView {
 extension SecondViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/1.5, height: collectionView.frame.width/1.2)
+        return CGSize(width: collectionView.frame.width/1.0, height: collectionView.frame.width/1)
     }
     
    

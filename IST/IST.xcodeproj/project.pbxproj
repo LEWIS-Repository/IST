@@ -19,6 +19,7 @@
 		B41AA29C24359A4800D51256 /* tryit.gif in Resources */ = {isa = PBXBuildFile; fileRef = B41AA29B24359A4800D51256 /* tryit.gif */; };
 		B41AA29E24359B8F00D51256 /* Gifs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41AA29D24359B8F00D51256 /* Gifs.swift */; };
 		B426F810242EFC4B009B9AFB /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F80F242EFC4B009B9AFB /* VideoViewController.swift */; };
+		B428381F2436E252000CC006 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = B428381E2436E252000CC006 /* giphy.gif */; };
 		B43D2719242DDD5F00CF73CD /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43D2718242DDD5F00CF73CD /* ViewControllers.swift */; };
 		B43D271B242DDE1500CF73CD /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43D271A242DDE1500CF73CD /* NewTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		B41AA29B24359A4800D51256 /* tryit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tryit.gif; sourceTree = "<group>"; };
 		B41AA29D24359B8F00D51256 /* Gifs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gifs.swift; sourceTree = "<group>"; };
 		B426F80F242EFC4B009B9AFB /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		B428381E2436E252000CC006 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		B43D2718242DDD5F00CF73CD /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		B43D271A242DDE1500CF73CD /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 				B43D271A242DDE1500CF73CD /* NewTableViewCell.swift */,
 				B43D2718242DDD5F00CF73CD /* ViewControllers.swift */,
 				B41AA29B24359A4800D51256 /* tryit.gif */,
+				B428381E2436E252000CC006 /* giphy.gif */,
 				06AEC54123F456DC00A16E14 /* LaunchScreen.storyboard */,
 				06AEC53F23F456DC00A16E14 /* Assets.xcassets */,
 				06AEC54423F456DC00A16E14 /* Info.plist */,
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B428381F2436E252000CC006 /* giphy.gif in Resources */,
 				B41AA29C24359A4800D51256 /* tryit.gif in Resources */,
 				06AEC54323F456DC00A16E14 /* LaunchScreen.storyboard in Resources */,
 				06AEC54023F456DC00A16E14 /* Assets.xcassets in Resources */,
